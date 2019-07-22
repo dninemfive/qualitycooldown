@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/StatDef[defName="MeleeWeapon_CooldownMultiplier"]</xpath>
+	<value>
+		<parts>
+			<li Class="StatPart_Quality">
+				<factorAwful>1.1</factorAwful>
+				<factorPoor>1.03</factorPoor>
+				<factorNormal>1</factorNormal>
+				<factorGood>0.98</factorGood>
+				<factorExcellent>0.95</factorExcellent>
+				<factorMasterwork>0.925</factorMasterwork>
+				<factorLegendary>0.9</factorLegendary>
+			</li>
+		</parts>
+	</value>
+</Operation>
+
+</Patch>
