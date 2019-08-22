@@ -1,10 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-<Operation Class="PatchOperationAdd">
-	<xpath>/Defs/StatDef[defName = "RangedWeapon_Cooldown"]</xpath>
-	<value>
-		<parts>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/StatDef[defName = "RangedWeapon_Cooldown"]/parts</xpath>
+		<success>Always</success>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName="RangedWeapon_Cooldown"]</xpath>
+			<value><parts/></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName = "RangedWeapon_Cooldown"]/parts</xpath>
+		<value>
 			<li Class="StatPart_Quality">
 				<factorAwful>1.2</factorAwful>
 				<factorPoor>1.05</factorPoor>
@@ -23,8 +29,6 @@
 					</points>
 				</curve>
 			</li>
-		</parts>
-	</value>
-</Operation>
-
+		</value>
+	</Operation>
 </Patch>
