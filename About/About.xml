@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Quality Cooldown</name>
-  <author>XeoNovaDan, updated by dninemfive</author>
-  <supportedVersions><li>1.0</li></supportedVersions>
-  <description>Makes it so that quality affects melee and ranged cooldown, with the latter also being affected by the weapon's condition.</description>
+  <author>dninemfive</author>
+  <supportedVersions><li>1.0</li><li>1.1</li></supportedVersions>
+  <description>Makes it so that quality affects melee and ranged cooldown, with the latter also being affected by the weapon's condition.\n\nOriginally by XeoNovaDan</description>
 </ModMetaData>
